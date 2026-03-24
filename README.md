@@ -15,17 +15,17 @@ Example:
 
 ```yml
 - name: Webhook
-  uses: joelwmale/webhook-action@master
+  uses: focusonthefamily/webhook-action@master
   with:
     url: ${{ secrets.WEBHOOK_URL }}
-    headers: '{"repository": "joelwmale/webhook-action"}'
-    body: '{"event": "deployment", "repository": "joelwmale/webhook-action"}'
+    headers: '{"repository": "focusonthefamily/webhook-action"}'
+    body: '{"event": "deployment", "repository": "focusonthefamily/webhook-action"}'
     github_event_payload: true
 ```
 
 It is **highly** recommended to use the action is an explicit commit SHA-1:
 
-`uses = "joelwmale/webhook-action@{SHA-1}"` to find a commit click [here.](https://github.com/joelwmale/webhook-action/commits/master)
+`uses = "focusonthefamily/webhook-action@{SHA-1}"` to find a commit click [here.](https://github.com/focusonthefamily/webhook-action/commits/master)
 
 ## Action Input
 
@@ -64,7 +64,7 @@ or
 Allows you to send custom headers with the request
 
 ```yml 
-  headers: '{"repository": "joelwmale/webhook-action"}'
+  headers: '{"repository": "focusonthefamily/webhook-action"}'
 ```
 
 #### Body
@@ -75,7 +75,7 @@ Allows you to send custom headers with the request
 Allows you to send a custom JSON object to the webhook
 
 ```yml 
-  body: '{"event": "deployment", "repository": "joelwmale/webhook-action"}'
+  body: '{"event": "deployment", "repository": "focusonthefamily/webhook-action"}'
 ```
 
 #### Insecure
@@ -104,12 +104,12 @@ The payload will be sent as a JSON object under the key `githubEventPayload` on 
 
 ## Issues
 
-If you find any issues or have an improvement feel free to [submit an issue](https://github.com/joelwmale/webhook-action/issues/new)
+If you find any issues or have an improvement feel free to [submit an issue](https://github.com/focusonthefamily/webhook-action/issues/new)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
-[ico-release]: https://img.shields.io/github/tag/joelwmale/webhook-action.svg
+[ico-release]: https://img.shields.io/github/tag/focusonthefamily/webhook-action.svg
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[link-github-release]: https://github.com/joelwmale/webhook-action/releases
+[link-github-release]: https://github.com/focusonthefamily/webhook-action/releases
